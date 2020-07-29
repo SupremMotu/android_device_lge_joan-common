@@ -119,7 +119,7 @@ on boot
    insmod /system/lib/modules/msm-vidc.ko
    insmod /system/lib/modules/msm-vidc-dyn-gov.ko
    insmod /system/lib/modules/msm-vidc-table-gov.ko
-
+  
 #Load WLAN driver
 #   insmod /vendor/lib/modules/qca_cld3_wlan.ko
 
