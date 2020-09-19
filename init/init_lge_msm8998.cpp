@@ -49,7 +49,9 @@
 
 using android::base::Trim;
 using android::base::GetProperty;
-using android::init::property_set;
+int property_set(const char *key, const char *value) {
+    return __system_property_set(key, value);
+}
 
 void property_override(const std::string& name, const std::string& value)
 {
@@ -90,7 +92,6 @@ void init_target_properties()
             }
         }
     }
-
     if(unknownDevice)
     {
         device = "UNKNOWN";
@@ -100,10 +101,9 @@ void init_target_properties()
     {
         property_set("persist.radio.multisim.config", "dsds");
     }
-
-    property_set("ro.product.model", device);
-    property_set("ro.vendor.product.model", device);
-    property_set("ro.product.system.model", device);
+    property_override("ro.product.model", device);
+    property_override("ro.vendor.product.model", device);
+    property_override("ro.product.system.model", device);
 }
 
 void vendor_load_properties() {
