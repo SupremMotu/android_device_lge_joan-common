@@ -35,6 +35,7 @@
 #include <unistd.h>
 #include <sys/stat.h>
 #include <sys/types.h>
+#include <sys/system_properties.h>
 
 #include <android-base/file.h>
 #include <android-base/logging.h>
@@ -42,7 +43,7 @@
 #include <android-base/strings.h>
 
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
-#include <sys/_system_properties.h>
+/* #include <sys/_system_properties.h> */
 
 #include "vendor_init.h"
 #include "property_service.h"
