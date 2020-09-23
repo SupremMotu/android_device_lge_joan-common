@@ -392,10 +392,11 @@ PRODUCT_COPY_FILES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
-    telephony-ext
+    telephony-ext \
+    ims-ext-common_system
 
-#PRODUCT_BOOT_JARS += \
-#    telephony-ext
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # Tethering
 PRODUCT_PROPERTY_OVERRIDES += \
