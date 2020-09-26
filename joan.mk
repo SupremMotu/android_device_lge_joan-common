@@ -265,8 +265,8 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster HAL
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl \
-    android.hardware.keymaster@3.0-service
+    android.hardware.keymaster@4.0-impl \
+    android.hardware.keymaster@4.0-service
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -478,3 +478,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+PRODUCT_BOARD_PLATFORM := msm8998
+PRODUCT_USES_QCOM_HARDWARE := true
