@@ -19,6 +19,7 @@ $(call inherit-product-if-exists, vendor/lge/joan-common/joan-common-vendor.mk)
 
 COMMON_PATH := device/lge/joan-common
 
+
 PRODUCT_SOONG_NAMESPACES += \
     device/lge/joan-common
 
@@ -257,10 +258,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.joan
 
-# Live Display
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.joan
-
 # Media
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -409,19 +406,9 @@ PRODUCT_PACKAGES += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.1-service.joan
-
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.joan
-
 # Touchscreen
 PRODUCT_PACKAGES += \
     libtinyxml2
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service \
