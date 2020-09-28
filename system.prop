@@ -216,3 +216,7 @@ wifi.interface=wlan0
 
 # Waterproof
 ro.product.lge.support.waterproof=true
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sensor.proximity=true \
+    ro.sensor.pickup=vendor.lge.sensors.lgpickup
