@@ -89,8 +89,6 @@ on post-fs-data
     mkdir /data/vendor/hbtp 0750 system system
 #    mkdir /data/misc/qvr 0770 system system
 
-# wifi hack
-    write /sys/kernel/boot_wlan/boot_wlan 1
 
 # For cpusets initialize for Silver Only first and then Silver + Gold
 # Silver Only configuration cannot work with 0-7
