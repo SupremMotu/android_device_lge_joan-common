@@ -159,6 +159,7 @@ on boot
     # Wifi firmware reload path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
     chown wifi wifi /sys/kernel/boot_wlan/boot_wlan
+    chmod 0777 /sys/kernel/boot_wlan/boot_wlan
 
     setprop ro.telephony.call_ring.multiple false
 
@@ -1249,6 +1250,3 @@ on property:vendor.opengles.version=*
 #Set gpu available frequencies property
 on property:vendor.gpu.available_frequencies=*
     setprop ro.vendor.gpu.available_frequencies ${vendor.gpu.available_frequencies}
-
-on property:sys.boot_completed=1
-    write /sys/kernel/boot_wlan/boot_wlan 1
