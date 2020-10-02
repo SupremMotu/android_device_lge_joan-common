@@ -33,7 +33,6 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(COMMON_PATH)/overlay-lineage/lineage-
 # Properties
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 
-TARGET_DISABLES_GAPPS := true
 
 TARGET_COMMON_QTI_COMPONENTS := \
     wfd
