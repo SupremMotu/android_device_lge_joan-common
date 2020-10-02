@@ -35,7 +35,7 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 
 
 TARGET_COMMON_QTI_COMPONENTS := \
-    wfd
+    wfd 
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
